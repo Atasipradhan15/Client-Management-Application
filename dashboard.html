@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Welcome, Atasi!</h2>
+        <div class="profile">
+            <img src="images/Profile.jpg" alt="Profile Picture">
+            <div>
+                <strong>Atasi Pradhan</strong><br>
+                <small>Client Account</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Card Grid -->
+        <div class="grid">
+            <button class="card" onclick="signNDA()" aria-label="Sign NDA">
+                <i class="fa fa-shield-halved"></i>
+                <p>Sign NDA</p>
+            </button>
+            <button class="card" onclick="downloadAgreement()" aria-label="Download Agreement">
+                <i class="fa fa-download"></i>
+                <p>Agreement Download</p>
+            </button>
+            <button class="card" onclick="openProjectTracker()" aria-label="Project Tracker">
+                <i class="fa fa-tasks"></i>
+                <p>Project Tracker</p>
+            </button>
+            <button class="card" onclick="reportBug()" aria-label="Report Bug">
+                <i class="fa fa-bug"></i>
+                <p>Bug</p>
+            </button>
+            <button class="card" onclick="manageInvoice()" aria-label="Invoice">
+                <i class="fa fa-file-invoice"></i>
+                <p>Invoice</p>
+            </button>
+            <button class="card" onclick="accessSupport()" aria-label="Support">
+                <i class="fa fa-headset"></i>
+                <p>Support</p>
+            </button>
+        </div>
+
+        <!-- Scheduled Meetings -->
+        <div class="meeting-box">
+            <h3>Scheduled Meetings</h3>
+            <div class="meeting">
+                <i class="fa fa-calendar"></i>
+                <div>
+                    <strong>Project Review</strong><br>
+                    Feb 5, 2026 | 10:00 AM
+                </div>
+            </div>
+            <div class="meeting">
+                <i class="fa fa-calendar"></i>
+                <div>
+                    <strong>NDA Discussion</strong><br>
+                    Feb 10, 2026 | 02:00 PM
+                </div>
+            </div>
+            <div class="meeting">
+                <i class="fa fa-calendar"></i>
+                <div>
+                    <strong>Monthly Update Call</strong><br>
+                    Feb 15, 2026 | 11:00 AM
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            We love Pradhan Tech Solutions @2026
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast"></div>
+
+    <!-- JavaScript -->
+    <script>
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2000);
+        }
+
+        function signNDA() { showToast("Redirecting to NDA signing page..."); }
+        function downloadAgreement() { showToast("Starting agreement download..."); }
+        function openProjectTracker() { showToast("Opening Project Tracker..."); }
+        function reportBug() { showToast("Redirecting to Bug Reporting system..."); }
+        function manageInvoice() { showToast("Opening Invoice Management..."); }
+        function accessSupport() { showToast("Opening Support Chat..."); }
+    </script>
+
+</body>
+
+</html>
