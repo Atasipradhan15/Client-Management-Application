@@ -1,3 +1,5 @@
+
+        /* DASHBOARD STYLE STARS */
  body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -7,7 +9,7 @@
 
         /* Header */
         .header {
-            background: linear-gradient(to right, hwb(214 19% 8%), #8c88f0);
+            background: linear-gradient(to right, hwb(204 3% 49%), #7671f4);
             color: white;
             padding: 15px 20px;
             display: flex;
@@ -19,6 +21,7 @@
         .profile {
             display: flex;
             align-items: center;
+            gap:10px
         }
 
        
@@ -140,3 +143,6 @@
                 padding: 15px;
             }
         }
+
+
+        /* DASHBOARD STYLE END */

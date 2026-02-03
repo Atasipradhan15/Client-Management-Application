@@ -7,7 +7,7 @@
     <title>Client Dashboard</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="Dashboard.css">
 </head>
 
 <body>
@@ -85,7 +85,9 @@
         <!-- Footer -->
         <div class="footer">
             <hr>
-            We love Pradhan Tech Solutions @2026
+             We love <span>Pradhan Tech Solutions </span> &hearts;
+             <br>
+             <span>© 2026 All Rights Reserved</span>
         </div>
     </div>
 
@@ -93,21 +95,7 @@
     <div id="toast"></div>
 
     <!-- JavaScript -->
-    <script>
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.style.display = 'block';
-            setTimeout(() => { toast.style.display = 'none'; }, 2000);
-        }
-
-        function signNDA() { showToast("Redirecting to NDA signing page..."); }
-        function downloadAgreement() { showToast("Starting agreement download..."); }
-        function openProjectTracker() { showToast("Opening Project Tracker..."); }
-        function reportBug() { showToast("Redirecting to Bug Reporting system..."); }
-        function manageInvoice() { showToast("Opening Invoice Management..."); }
-        function accessSupport() { showToast("Opening Support Chat..."); }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

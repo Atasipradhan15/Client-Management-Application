@@ -1,8 +1,10 @@
+/* LOGIN STYLE STARTS */
+
 body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('images/Client-Management.jpg');
+             url('images/Client-Management.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -96,3 +98,8 @@ body {
             margin-top: 18px;
             opacity: .85;
         }
+
+
+        /* LOGIN STYLE END */
+
+
